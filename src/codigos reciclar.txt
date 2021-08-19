@@ -1,0 +1,34 @@
+ <!-- <v-list-group :value="false" no-action sub-group> -->
+              <!-- <template v-slot:activator>
+                <v-list-item-content>
+                  <v-list-item-title>Admin</v-list-item-title>
+                </v-list-item-content>
+              </template>-->
+
+
+              /*     mounted() {
+        this.$nextTick(function () {
+            // Code that will run only after the
+            // entire view has been rendered
+            //var mytoken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDgwZGNmYWNjODAyOTIzZTQ2N2E1NzMiLCJpYXQiOjE2MTk5MDM3MTksImV4cCI6MTYyMDUwODUxOX0.xULcqEM31DJKFKwT8j3kARJtNA2L3e86UNx7VfuMgD0"; 
+            var mytoken = localStorage.getItem("user-token")
+            axios({
+                    url: "http://localhost:5000/api/categoria/",
+                    method: "GET",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        token: mytoken, //the token is a variable which holds the token
+                    },
+                })
+                .then((resp) => {
+                    if (resp.status === 200) {
+                        console.log(resp.data.categoria[0])
+                        this.categoria = resp.data.categoria;
+                        console.log(this.categoria)
+                    }
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        });
+    }, */
