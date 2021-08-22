@@ -2,16 +2,16 @@ import express from 'express';
 import cors from "cors";
 import dbconnection from "./database/config.js"
 import {} from "dotenv/config.js";
-<<<<<<< HEAD
-import UsuarioAplicacion from './routes/UsuarioAplicacion.js';
 
-=======
+
 import usuario from './routes/usuario.js';
 import articulo from './routes/articulo.js';
 import ingreso from './routes/ingreso.js';
 import persona from './routes/persona.js';
+import categoria from './routes/categoria.js';
+
 import {} from "./models/articulo.js";
->>>>>>> c53d476648e31682489b309147fb6dda040d674d
+
 class Server {
     constructor() {
         //Servidor
@@ -25,16 +25,14 @@ class Server {
         //Rutas
     }
     routes() {
-<<<<<<< HEAD
-        this.app.use('/api/usuarioaplicacion', UsuarioAplicacion);
 
-=======
+
         this.app.use('/api/categoria', categoria);
         this.app.use('/api/usuario', usuario);
         this.app.use('/api/articulo', articulo);
         this.app.use('/api/ingreso', ingreso)
         this.app.use('/api/persona', persona)
->>>>>>> c53d476648e31682489b309147fb6dda040d674d
+
     }
     async conectarBD() {
         await dbconnection();

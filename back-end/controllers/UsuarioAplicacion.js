@@ -1,4 +1,4 @@
-import UsuarioAplicacion from '../models/UsuarioAplicacion.js'
+import UsuarioAplicacion from '../models/usuario.js'
 
 const UsuarioAplicacionGet = async(req, res) => {
     //const articulos = await Articulo.find().populate('categoria', 'nombre');
